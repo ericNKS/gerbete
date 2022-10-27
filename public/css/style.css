@@ -57,6 +57,9 @@ div.principal img{
     flex-direction: row;
     border: 1px;
 }
+.img-produtos a img{
+    width: 320px;
+}
 .produto{
     margin: 4px;
 }
