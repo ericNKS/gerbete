@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Miniframework</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/nav.css">
+		<link rel="stylesheet" type="text/css" href="/css/user.css">
+	</head>
+
+	<body>
+		<nav class="nav">
+			<div class="div-show">
+				<button class="btn-show" onclick="showMenuList()">
+					<img src="img/sidebar.png" alt="Imagem do botão que abre o menu">
+				</button>
+			</div>
+			<a class="nav-linkName" href="/"><h1><span style="color: #fcf300;">Ger</span>bete</h1></a>
+			
+			<ul id="menu-list">
+				<li class="dropdown">
+					<a href="#" id="link-homem">
+						Masculino 
+					</a>
+					<div class="dropdown-content" id="menu-homem">
+						<div class="opcoes">
+							<a href="#"> Camisas</a>
+							<a href="#"> Calças</a>
+							<a href="#"> Bermudas</a>
+							<a href="#"> Calçados</a>
+						</div>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="#" id="link-mulher">
+						Feminino 
+					</a>
+					<div class="dropdown-content" id="menu-mulher">
+						<div class="opcoes">
+							<a href="#"> Blusas</a>
+							<a href="#"> Calças</a>
+							<a href="#"> Short</a>
+							<a href="#"> Sapatos</a>
+							<a href="#"> Sandalias</a>
+						</div>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="#" id="link-infantil">
+						Infantil 
+					</a>
+					<div class="dropdown-content" id="menu-infantil">
+						<div class="opcoes">
+							<a href="#"> Camisas</a>
+							<a href="#"> Calças</a>
+							<a href="#"> Bermudas</a>
+							<a href="#"> Calçados</a>
+						</div>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="#" id="link-acessorios">
+						Acessórios e Esportivos
+					</a>
+					<div class="dropdown-content" id="menu-acessorios">
+						<div class="opcoes">
+							<a href="#"> Cinto</a>
+							<a href="#"> Carteira</a>
+							<a href="#"> Bola</a>
+							<a href="#"> Luva</a>
+							<a href="#"> Caneleira</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a class="btn-login" href="/login">
+						<img src="img/user.png" width="20px" alt="Botão de login / registrar">
+					</a>
+				</li>
+			</ul>
+		</nav>
+	
+
+		<?= $this->content() ?>
+
+		<script src="/js/nav.js"></script>
+	</body>
+
+</html>

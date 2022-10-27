@@ -1,0 +1,68 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #fcf300;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.principal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+div.principal img{
+    width: 1080px;
+    height: 500px;
+}
+.servico-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.servico{
+    margin: 5px 8px;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+    padding: 10px;
+    align-self: center;
+}
+.servico p{
+    color: rgb(73, 73, 73);
+}
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    border: 1px dashed rgb(73, 73, 73);
+}
+.classe-produto{
+    text-align: center;
+}
+.produtos{
+    display: flex;
+    flex-direction: row;
+    border: 1px;
+}
+.produto{
+    margin: 4px;
+}
+.descricao-produtos a:hover{
+    color: black;
+}
+.descricao-produtos{
+    color: rgb(73, 73, 73);
+}
