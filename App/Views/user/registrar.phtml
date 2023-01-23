@@ -13,19 +13,18 @@
                 </a>
             </h4>
         </div>
-        <form action="">
+        <form action="cadastrar" method="post">
             <label for="nome-registrar">Nome: </label>
                 <input type="text" name="nome" id="nome-registrar">
             <label for="email-registrar">Email: </label>
                 <input type="email" name="email" id="email-registrar">
+            <?php if(isset($_GET['email']) && $_GET['email'] == 'existente'){ ?>
+                <p style="color: red; margin: -5px 0px 10px 0px;">Email existente</p>
+            <?php } ?>
             <label for="senha-registrar">Senha: </label>
                 <input type="password" name="senha" id="senha-registrar">
             <label for="confirmar-registrar">Confirmar senha: </label>
                 <input type="password" name="confirmar-senha" id="confirmar-registrar">
-            <label for="remember">
-                <input type="checkbox" name="remember" id="remember">
-                Lembrar de mim
-            </label>
             <input type="submit" value="Entrar">
         </form>
     </div>

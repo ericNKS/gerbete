@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Miniframework</title>
+		<title>Gerbete</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
 		<link rel="stylesheet" type="text/css" href="/css/nav.css">
@@ -9,6 +9,8 @@
 	</head>
 
 	<body>
+		<?php session_start();?>
+
 		<nav class="nav">
 			<div class="div-show">
 				<button class="btn-show" onclick="showMenuList()">
@@ -73,10 +75,17 @@
 					</div>
 				</li>
 				<li>
-					<a class="btn-login" href="/login">
+					<a class="btn-login" href="<?= isset($_SESSION['conta']) ? 'perfil': 'login' ?>">
 						<img src="img/user.png" width="20px" alt="Botão de login / registrar">
 					</a>
 				</li>
+				<?php if(isset($_SESSION['conta']) && $_SESSION['conta']){ ?>
+					<li>
+						<a class="btn-login" href="/sair">
+							SAIR
+						</a>
+					</li>
+				<?php } ?>
 			</ul>
 		</nav>
 	

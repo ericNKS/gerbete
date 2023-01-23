@@ -1,0 +1,7 @@
+Colocar no registrar o cpf da pessoa
+verificar cpf
+verificar email
+ao fazer o login ver se o usuario ativou a conta pelo email
+esqueci a senha
+colocar o login e o cadastrar sem ser uma pagina e sim um dropdown
+usar ajax para o login e 

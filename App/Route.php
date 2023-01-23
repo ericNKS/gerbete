@@ -23,6 +23,26 @@ class Route extends Bootstrap {
 			'controller' => 'userController',
 			'action' => 'registrar'
 		);
+		$routes['autenticar'] = array(
+			'route' => '/autenticar',
+			'controller' => 'userController',
+			'action' => 'autenticar'
+		);
+		$routes['cadastrar'] = array(
+			'route' => '/cadastrar',
+			'controller' => 'userController',
+			'action' => 'cadastrar'
+		);
+		$routes['sair'] = array(
+			'route' => '/sair',
+			'controller' => 'userController',
+			'action' => 'sair'
+		);
+		$routes['perfil'] = array(
+			'route' => '/perfil',
+			'controller' => 'perfilController',
+			'action' => 'perfil'
+		);
 
 		$this->setRoutes($routes);
 	}

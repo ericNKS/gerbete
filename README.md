@@ -1,1 +1,1 @@
-O Git/GitHub são legais!
+Para iniciar o projeto entre na pasta publica pelo cmd e dê o comando php -S localhost:8080
